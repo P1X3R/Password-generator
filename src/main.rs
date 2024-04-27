@@ -10,7 +10,7 @@ fn main() {
     std::io::stdin().read_line(&mut password_length).unwrap();
     let password_length: usize = password_length.trim().parse().unwrap();
 
-    // Get the hour in ms
+    // Get the hour in seconds
     let start = SystemTime::now();
     let since_the_epoch = start
         .duration_since(UNIX_EPOCH)
